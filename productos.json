@@ -1,15 +1,4 @@
-// archivo: server.js
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
-
-// Lista de artículos hardcodeados
-
-
-
-
-
-const articulos = [
+[
   {
     "id": 1,
     "empresa": "Levis",
@@ -136,13 +125,4 @@ const articulos = [
     "totalValoraciones": "45",    
     "dto": ""
   }
-] ;
-
-// Ruta que devuelve los artículos
-app.get('/api/articulos', (req, res) => {
-  res.json(articulos);
-});
-
-app.listen(port, () => {
-  console.log(`API escuchando en http://localhost:${port}`);
-});
+]
